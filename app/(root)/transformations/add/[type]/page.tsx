@@ -11,7 +11,9 @@ const AddTransformationTypePage = async ({ params: { type }}: SearchParamProps )
 
   if(!userId) redirect('/sign-in')
   
-  const user = await getUserById(userId);
+  const user = await getUserById(userId);  
+  
+  if(!user) return Error('User not defined')
   return (
     <>
       <Header 
@@ -20,7 +22,7 @@ const AddTransformationTypePage = async ({ params: { type }}: SearchParamProps )
       />
       <TransformationForm 
          action="Add"
-         userId={user._id}
+         userId={user.id} 
          type={transformation.type as TransformationTypeKey}
          creditBalance={user.creditBalance}
       />
