@@ -58,6 +58,10 @@ export const navLinks = [
           isIncluded: true,
         },
         {
+          label: "Create up to 10 tags",
+          isIncluded: true,
+        },
+        {
           label: "Priority Customer Support",
           isIncluded: false,
         },
@@ -83,6 +87,10 @@ export const navLinks = [
           isIncluded: true,
         },
         {
+          label: "Create up to 100 tags",
+          isIncluded: true,
+        },
+        {
           label: "Priority Customer Support",
           isIncluded: true,
         },
@@ -105,6 +113,10 @@ export const navLinks = [
         },
         {
           label: "Full Access to Services",
+          isIncluded: true,
+        },
+        {
+          label: "Create up to 300 tags",
           isIncluded: true,
         },
         {
@@ -181,7 +193,27 @@ export const navLinks = [
       height: 1778,
     },
   };
-  
+
+  export const tagsOptions: {
+    [key: string]: {
+      tag: string;
+      label: string;
+    };
+  } = {
+    tag1: {
+      tag: "tag1",
+      label: "Tag 1",
+    },
+    tag2: {
+      tag: "tag2",
+      label: "Tag 2",
+    },
+    tag3: {
+      tag: "tag3",
+      label: "Tag 3",
+    },
+  };
+
   export const defaultValues = {
     title: "",
     aspectRatio: "",

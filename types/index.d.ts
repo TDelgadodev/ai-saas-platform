@@ -125,6 +125,7 @@ declare type TransformationFormProps = {
   creditBalance: number;
   data?: IImage | null;
   config?: Transformations | null;
+  tags?: Tags | null
 };
 
 declare type TransformedImageProps = {
@@ -135,4 +136,16 @@ declare type TransformedImageProps = {
   isTransforming: boolean;
   hasDownload?: boolean;
   setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+// ====== TAGS PARAMS
+
+declare type AddTagParams = {
+  name: string,
+  createdBy: string,
+};
+
+declare type UpdateTagParams = {
+  name?: string;
+  createdBy?: string;
 };

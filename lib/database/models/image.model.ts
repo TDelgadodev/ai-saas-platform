@@ -34,6 +34,7 @@ const ImageSchema = new Schema({
   color: { type: String },
   prompt: { type: String },
   author: { type: Schema.Types.ObjectId, ref: 'User' },
+  tags: { type: Schema.ObjectId, ref: 'Tag' },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now }
 });
