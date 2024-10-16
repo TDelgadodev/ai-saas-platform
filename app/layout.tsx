@@ -13,7 +13,7 @@ const IBMPlex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ImageWorks Hub",
+  title: "Imaginify",
   description: "ImageWorks Hub: Powerful AI-driven image editing. Remove backgrounds, add effects, and more. Transform your photos today",
 };
 
